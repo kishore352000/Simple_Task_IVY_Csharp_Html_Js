@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Scope of Local and Global</h2>
+
+<script>
+let global = "A GLOBAL variable can be accessed from any script or function.";
+myFunction();
+
+function myFunction() {
+	let local="A LOCAL varibale can be accessed only in a specified block of code";
+    //GLOBAL variable can be accessed from any script or function.
+  document.writeln(global);
+  //A local varibale can be accessed only in a specified block of code.
+ document.writeln(local);
+	
+}
+//A local varibale cannot be accessed outside of a block.
+ document.writeln(local);
+</script>
+
+</body>
+</html>

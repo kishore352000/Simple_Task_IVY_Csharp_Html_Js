@@ -1,0 +1,48 @@
+<html>
+
+<body>
+    <p id="one">Welcome...This is an Example using ID</p>
+
+    <p class="example">Welcome.. This an example using class name</p>
+
+
+    <p> Example for selection using tag name </p>
+	
+	
+    <ul class="css">
+        <li>IT Field</li>
+        <li >IVY Comptech</li>
+    </ul>
+
+
+    <script>
+	
+        // Using Id
+        var ById = document.getElementById("one");
+        ById.style.background = "blue";
+
+        // Using class name
+        var ByClass = document.getElementsByClassName("example");
+
+
+        ByClass[0].style.fontWeight = "bold";
+
+
+        //Using tag name
+        var ByTag = document.getElementsByTagName("p");
+
+
+        
+        ByTag[0].style.color = "yellow";
+        ByTag[1].style.color = "yellow";
+
+
+        //using css 
+         attr= document.querySelectorAll("ul.css");
+        attr[0].style.background = "red";
+
+
+    </script>
+</body>
+
+</html>

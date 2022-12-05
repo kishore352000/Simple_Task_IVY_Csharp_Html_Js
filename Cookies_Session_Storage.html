@@ -1,0 +1,41 @@
+<html>
+<script>
+let name=document.cookie="cookiename=kishore"
+console.log(name);
+
+document.cookie = "VisiterName=Kishore; expires=Sun, 04 Dec 2022:11:11:11 GMT; ";
+//deleting cookies
+document.cookie = "VisiterName=; expires=Sun, 04 Dec 2022:11:11:11 GMT; ";
+
+//Local & Session Storage
+
+//setitem
+localStorage.setItem('Name1','Kishore');
+localStorage.setItem('Name2','Lakki');
+localStorage.setItem('Name3','Yogesh');
+
+//getitem
+
+console.log(localStorage.getItem("Name2"));
+
+//remove item
+localStorage.removeItem("Name3");
+
+//set item for session
+sessionStorage.setItem('sessionName1','Mohan');
+sessionStorage.setItem('sessionName2','Bhanu');
+sessionStorage.setItem('sessionName3','Vijay');
+
+sessionStorage.removeItem("sessionName3");
+
+
+console.log(sessionStorage.getItem("sessionName2"));
+
+</script>
+<body>
+<h2>Difference Between Local Storage, Session Storage And Cookies</h2>
+<ul>Local Storage: This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions.it must be deleted via javascript or manually.</ul>
+<ul>Session Storage: It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed</ul>
+<ul>Cookie: Cookies expire based on the setting and working per tab and window. </ul>
+</body>
+</html>
